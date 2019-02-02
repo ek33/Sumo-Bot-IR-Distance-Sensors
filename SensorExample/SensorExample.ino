@@ -27,8 +27,8 @@ void loop(){
   }
 
   //Writing distance values to Serial Port
-  for (byte i = 1; i < totalSensors+1; i++) {
-    Serial.print(i);Serial.print("th sensor's value: ");Serial.println(distances[i]);
+  for (byte i = 0; i < totalSensors; i++) {
+    Serial.print(i+1);Serial.print("th sensor's value: ");Serial.println(distances[i]);
   }  
 Serial.println();
 Serial.println();
